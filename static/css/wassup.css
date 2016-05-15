@@ -1,0 +1,172 @@
+
+div {
+    padding-top:10px;
+    padding-left:15px;
+    padding-bottom:-10px;
+}
+.progress {
+    float: right;
+    width: 150px;
+    position:relative;
+}
+
+body {
+    overflow:hidden;
+}
+
+#sup-count {
+    position:absolute;
+}
+
+#load_bar{
+    width:120%;
+    height:150%;
+    margin-left:-10px;
+    margin-top:-7px;
+}
+
+#msg_box {
+    float:left;
+    display: block;
+    padding-left:25px;
+    margin-top:0px;
+    margin-left:20px;
+
+}
+
+.btn_box {
+    padding-bottom:15px;
+
+
+}
+.text_a{
+    font-size: large;
+    font-family: Consolas;
+}
+
+@media only screen
+and (max-width : 450px) {
+ .logo {
+     width:50%;
+
+ }
+    #account-ui {
+        display: inline-block;
+        float:left;
+        width:180px;
+        height:150px;
+        background-color:lightgrey;
+        outline: steelblue solid;
+        padding-bottom: 4px;
+        margin-left:10px;
+        top:25px;
+        overflow:auto;
+    }
+
+    #sup_canvas {
+        outline: #000100 solid 1px;
+        padding-bottom: 15px;
+        float:left;
+        padding-top: 15px;
+        height:400px;
+
+    }
+
+    #friends-menu{
+        width:100px;
+        height:100px;
+        background-color:#d3d3f0;
+
+        overflow:auto;
+    }
+}
+
+@media only screen
+
+and (min-device-width : 451px) {
+
+    .logo{
+        width:250px;
+        left: 45%;
+    }
+
+    #account-ui {
+        display: inline-block;
+        float: left;
+        width: 220px;
+        background-color: lightgrey;
+        outline: lightsteelblue solid;
+        padding-bottom: 8px;
+        margin-left: 20px;
+        top: 50px;
+
+    }
+
+    #sup_canvas {
+        outline: #000100 solid 2px;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        padding-top: 15px;
+
+    }
+
+    #friends-menu{
+        width:150px;
+        height:150px;
+        background-color:#d3d3f0;
+        outline: grey solid thin;
+        overflow:auto;
+    }
+}
+
+#logout{
+    padding-top: 0px;
+    position:relative;
+
+}
+
+#logout_btn:hover{
+  background-color: darkred;
+    color:white;
+
+}
+#server_box p {
+    display:block;
+}
+
+#logout_btn{
+    position:absolute;
+
+    right:10px;
+}
+.btn_class{
+    position:relative;
+    right:18px;
+}
+
+.btn_class:hover {
+    background-color: lightblue;
+}
+.btn_box input{
+    display:inline;
+}
+
+input:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+.MyGradientClass
+{
+
+    height:110vh;
+    background: linear-gradient(lightgrey, lightcyan); /* Standard syntax (must be last) */
+
+}​
+
+ #login_form input {
+    background-color:black;
+    display:block;
+ }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Wassup! </title>
+    <link rel="stylesheet" type="text/css" href="/static/css/wassup.css" />
+    <link rel="stylesheet" href="/static/css/ext/bootstrap.css"/>
+  <body class="MyGradientClass">
+    <img class="logo" src="/static/wassup_logo.png"/>
+    <div class="progress" id="loading">
+      <div class="progress-bar progress-bar-striped active" id="load_bar" role="progressbar"
+           aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+
+      </div>
+    </div>
+    <div id="logout">
+      <form method="POST" id="" action="/logout" enctype="multipart/form-data">
+        <input type="submit" id="logout_btn" value="Log Out" />
+      </form>
+    </div>
+
+    <div id="server_box">
+      <p class="text_a">Server Type:</p>
+     <label for="public"> Public </label> <input type="radio" name="server" id="public" value="public">
+      <label for="public"> Private </label> <input type="radio" name="server" id="private" value="private">
+    </div>
+
+    <div id="account-ui">
+      <label for="new-friend"> </label><input type="text" id="new-friend" placeholder="Add a Friend">
+      <input type="button" id="add_friend" value="+">
+      <label for="make_friend"> </label><input type="text" id="make_friend" placeholder="Create user (Testing)">
+      <input type="button" id="make-user" value="Create">
+      <p id="user_name"> User: </p>
+      <p id="friend-count"> Friend Count: 0 </p>
+      <p id="friend-list"> Friends List</p>
+
+      <div id="friends-menu">
+
+      </div>
+      <div class="btn_box">
+      <input type="button" class="btn_class" id="send_sup" value="Send Sup">
+      <input type="button" class="btn_class" id="remove_friend" value="Remove Friend">
+      </div>
+    </div>
+
+
+
+    <div id="msg_box">
+      <div class="btn_box">
+        <input type="button" class="btn_class" id="prev_sup" value="<">
+        <input type="button" class="btn_class" id="next_sup" value=">">
+        <input type="button" class="btn_class" id="del_sup" value="Delete Sup">
+        <input type="button" class="btn_class" id="clear_sup" value="Clear All Sups">
+        <input type="button" class="btn_class" id="check_sup" value="Check Sups">
+      </div>
+      <canvas id="sup_canvas" height="400" width="350"> </canvas>
+      <p id="sup-count" class="text_a"> </p>
+    </div>
+
+
+
+    <script src="/static/js/ext/underscore.js"></script>
+    <script type="text/javascript" src="/static/js/wassup.js"></script>
+  </body>
+</html>
